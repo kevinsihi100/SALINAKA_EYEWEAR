@@ -7,7 +7,8 @@ import static browser.openBrowser.driver;
 
 public class SIGN_IN {
 
-    public static void signInButton(){
+    public static void signInButton() throws InterruptedException {
+        Thread.sleep(2000);
         WebElement signIn = driver.findElement(By.xpath("//a[contains(text(),'Sign In')]"));
         signIn.click();
     }

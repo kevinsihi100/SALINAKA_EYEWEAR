@@ -10,11 +10,11 @@ import static browser.openBrowser.driver;
 
 public  class screenshot extends Exception {
 
-    public static void takeSnapShot() throws Exception{
+    public static void takeSnapShot(String filePath) throws Exception{
 
         TakesScreenshot scrShot =((TakesScreenshot)driver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-        File DestFile=new File(".\\screenshot\\home.jpg");
+        File DestFile=new File(filePath);
         FileUtils.copyFile(SrcFile, DestFile);
 
     }

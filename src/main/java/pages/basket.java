@@ -9,8 +9,11 @@ public class basket {
         WebElement cartButton = driver.findElement(By.xpath("//button[@class='button-link navigation-menu-link basket-toggle']"));
         cartButton.click();
     }
-    public static void checkOut(){
-
+    public static void checkOut() throws InterruptedException {
+        Thread.sleep(2000);
+        WebElement checkOut =driver.findElement(By.xpath("//button[contains(text(),'Check Out')]"));
+        WebElement signin = driver.findElement(By.xpath("//button[contains(text(),'Sign in to checkout')]"));
+        checkOut.click();
     }
     public static void cancelButton(){
         WebElement cancelButton = driver.findElement(By.xpath("//button[@class='basket-item-remove button button-border button-border-gray button-small']"));

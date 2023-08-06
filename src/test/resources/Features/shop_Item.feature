@@ -9,6 +9,7 @@ Feature: Eye-ware search_item
     Then click on add to basket option
     Then go to my basket option
     Then click on check out button
+    And user need login to continue shopping
     Then click on next step
     And Enter the shopping details
     Then click on next
