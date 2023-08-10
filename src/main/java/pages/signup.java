@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import static browser.openBrowser.driver;
 
@@ -14,10 +15,14 @@ public class signup {
     }
 
     //Enter the all Full Details new Customer
-    public static void FullName(String fullName){
+
+    public static void FullName(String fullName) throws InterruptedException {
+        Thread.sleep(2000);
         WebElement full_Name = driver.findElement(By.xpath("//input[@id='fullname']"));
         full_Name.sendKeys(fullName);
     }
+
+
     public static void EmailId(String EmailId){
         WebElement email_id = driver.findElement(By.xpath("//input[@id='email']"));
         email_id.sendKeys(EmailId);

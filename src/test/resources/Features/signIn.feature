@@ -12,5 +12,4 @@ Feature: Eye-ware Login with valid credentials
     Examples:
       | Email_Id              |  | PassWord  |
       | 17sonupatel@gmail.com |  | India1707 |
-      | 1172nishant@gmail.com |  | India1707 |
 

@@ -12,7 +12,6 @@ public class basket {
     public static void checkOut() throws InterruptedException {
         Thread.sleep(2000);
         WebElement checkOut =driver.findElement(By.xpath("//button[contains(text(),'Check Out')]"));
-        WebElement signin = driver.findElement(By.xpath("//button[contains(text(),'Sign in to checkout')]"));
         checkOut.click();
     }
     public static void cancelButton(){

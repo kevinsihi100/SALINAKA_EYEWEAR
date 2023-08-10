@@ -8,7 +8,6 @@ public class signIn {
     @Then("Click on SignIn")
     public void click_on_sign_in() throws InterruptedException {
         SIGN_IN.signInButton();
-
     }
 
     @Then("click on signIn button")

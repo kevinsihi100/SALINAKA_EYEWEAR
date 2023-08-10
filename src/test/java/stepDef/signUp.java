@@ -23,7 +23,7 @@ public class signUp {
         signup.Signup_button();
     }
     @Then("Enter Full Name {string}")
-    public void enter_full_name(String FullName) {
+    public void enter_full_name(String FullName) throws InterruptedException {
         signup.FullName(FullName);
     }
     @Then("Enter Email-ID {string}")
