@@ -12,7 +12,6 @@ public class openBrowser {
     public static void URL(String Url) throws InterruptedException {
         driver.get(Url);
         Thread.sleep(2000);
-
     }
     public static void close(){
         driver.quit();

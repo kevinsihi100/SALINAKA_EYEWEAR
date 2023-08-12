@@ -7,6 +7,8 @@ import io.cucumber.java.en.Then;
 import pages.signup;
 import screenShot.screenshot;
 
+import static browser.openBrowser.driver;
+
 public class signUp {
     @Given("open the Browser")
     public void open_the_browser() {
@@ -16,7 +18,7 @@ public class signUp {
     public void enter_the_url(String URL) throws Exception {
         openBrowser.URL(URL);
         Thread.sleep(2000);
-        screenshot.takeSnapShot(".\\screenshot\\homepage.jpg");
+        screenshot.takeSnapShot(driver,"homepage");
     }
     @Then("Click on SignUp")
     public void click_on_sign_up() throws Exception {
@@ -34,7 +36,7 @@ public class signUp {
     public void enter_pass_word(String Password) throws Exception {
         signup.PassWord(Password);
         Thread.sleep(2000);
-        screenshot.takeSnapShot(".\\screenshot\\signup.jpg");
+        screenshot.takeSnapShot(driver,"signup");
     }
     @Then("click on signUP button")
     public void click_on_sign_up_button() {

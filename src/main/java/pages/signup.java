@@ -8,6 +8,7 @@ import static browser.openBrowser.driver;
 
 public class signup {
     //signUP button for new customer
+
     public static void Signup_button() {
         WebElement signup_button = driver.findElement(By.xpath("//a[@class='button button-small']"));
         signup_button.click();
